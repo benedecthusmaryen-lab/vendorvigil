@@ -1,0 +1,43 @@
+# VendorVigil Dependencies
+# Band of Agents Hackathon 2026 — OlengSquad
+
+# Band SDK (coordination layer)
+band-sdk[langgraph,anthropic,pydantic-ai]>=1.0.0
+
+# OpenAI client (used for both AI/ML API and Featherless gateways)
+openai>=1.0.0
+
+# Pydantic AI — agent framework
+pydantic>=2.0.0
+
+# Pydantic AI Agent framework
+pydantic-ai>=0.0.1
+
+# LangGraph — coordinator/router framework
+langgraph>=0.1.0
+
+# LangChain OpenAI — ChatOpenAI for LangGraph coordinator
+langchain-openai>=0.1.0
+
+# Environment variable management
+python-dotenv>=1.0.0
+
+# Streamlit — demo dashboard
+streamlit>=1.30.0
+
+# YAML config support
+pyyaml>=6.0
+
+# Logging
+colorlog>=6.0
+
+# HTTP client (for Band REST API posting from dashboard)
+httpx>=0.25.0
+
+# FastAPI — REST API backend for React frontend
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+sse-starlette>=1.8.0
+
+# SQLite async driver for assessment store
+aiosqlite>=0.20.0

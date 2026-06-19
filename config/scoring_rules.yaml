@@ -1,0 +1,70 @@
+# =============================================================================
+# VendorVigil — Scoring Rules Configuration
+# Deterministic scoring + fail-closed override rules.
+# LLMs are used only for reasoning, extraction, and report writing.
+# Final numeric scores are always computed deterministically.
+# =============================================================================
+
+# Domain weights for total score computation
+weights:
+  security: 0.35
+  privacy: 0.30
+  financial: 0.20
+  evidence: 0.15
+
+# Risk status thresholds
+status_thresholds:
+  APPROVED:
+    min: 80
+    max: 100
+    meaning: "Vendor may proceed to contract stage with normal notes."
+  NEEDS_REVISION:
+    min: 65
+    max: 79
+    meaning: "Vendor must complete missing evidence before approval."
+  ESCALATED:
+    min: 45
+    max: 64
+    meaning: "Mandatory human review required."
+  TEMPORARILY_REJECTED:
+    min: 0
+    max: 44
+    meaning: "Vendor not yet eligible to proceed."
+
+# Fail-closed rules — applied AFTER numeric scoring
+# These rules can only escalate, never downgrade.
+fail_closed_rules:
+  rule_1:
+    description: "Vendor processes personal data without DPA"
+    condition: "processes_personal_data == true AND dpa == false"
+    override: "ESCALATED"
+
+  rule_2:
+    description: "Vendor processes payments without SOC 2"
+    condition: "processes_payments == true AND soc2 == false"
+    override: "ESCALATED"
+
+  rule_3:
+    description: "ISO 27001 and encryption both unavailable"
+    condition: "iso27001 == false AND encryption == 'not available'"
+    override: "ESCALATED"
+
+  rule_4:
+    description: "Two domain sub-scores below 50"
+    condition: "count(sub_scores < 50) >= 2"
+    override: "ESCALATED"
+
+  rule_5:
+    description: "Total score below 45"
+    condition: "total_score < 45"
+    override: "TEMPORARILY_REJECTED"
+
+  rule_6:
+    description: "Agent confidence below 0.75"
+    condition: "min_agent_confidence < 0.75"
+    override: "ESCALATED"
+
+  rule_7:
+    description: "Incomplete input data — cannot be APPROVED"
+    condition: "evidence_completeness < 30 AND status == APPROVED"
+    override: "ESCALATED"

@@ -1,0 +1,99 @@
+{
+  "vendor_id": "V-001",
+  "vendor_name": "SafeDocsID",
+  "legal_name": "PT SafeDocs Digital Indonesia",
+  "service_type": "Internal non-sensitive document storage",
+  "headquarters": "Jakarta, Indonesia",
+  "regions_served": ["Indonesia"],
+  "employees": 45,
+  "founded_year": 2018,
+  "website": "https://safedocsid.example.co.id",
+  "primary_contact": "Rina Wulandari, Head of Enterprise Sales",
+  "contract_type": "Annual SaaS subscription",
+  "contract_value_estimate": "$24,000/year",
+  "processes_personal_data": false,
+  "processes_payments": false,
+  "data_types": [
+    "internal SOP documents",
+    "company policies",
+    "training materials",
+    "meeting minutes",
+    "project documentation"
+  ],
+  "data_volume_estimate": "~50,000 documents, ~20 GB",
+  "security_evidence": {
+    "soc2": true,
+    "soc2_report_date": "2024-03-01",
+    "soc2_type": "Type II",
+    "soc2_scope": "Document storage and access control systems",
+    "iso27001": true,
+    "iso27001_certification_date": "2022-09-10",
+    "iso27001_scope": "All operations",
+    "encryption": "complete",
+    "encryption_at_rest": "AES-256 for all stored documents and backups",
+    "encryption_in_transit": "TLS 1.3 for all connections",
+    "key_management": "Customer-managed encryption keys (CMEK) available",
+    "penetration_testing": "Annual pen test by independent firm, last: Dec 2024, clean report shared",
+    "vulnerability_scanning": "Weekly automated scans, all critical findings remediated within 48 hours",
+    "incident_history": "no material incidents",
+    "incident_response_plan": "Documented and shared with clients, includes 4-hour notification SLA",
+    "access_controls": "RBAC + MFA for all accounts, SSO via SAML 2.0",
+    "logging_monitoring": "SIEM with real-time alerting, 365-day log retention",
+    "employee_background_checks": "All employees undergo background verification before hiring",
+    "security_awareness_training": "Quarterly mandatory training for all staff"
+  },
+  "privacy_evidence": {
+    "dpa": true,
+    "dpa_reviewed": "Signed DPA with clear data handling obligations",
+    "data_location": "Indonesia",
+    "data_centers": ["AWS ap-southeast-3 (Jakarta)", "Backup: AWS ap-southeast-1 (Singapore)"],
+    "data_retention": "12 months",
+    "retention_policy": "Active documents retained per contract. Deleted documents purged within 30 days, including backups.",
+    "sub_processors": [
+      "AWS (hosting — Jakarta region)",
+      "Cloudflare (CDN and DDoS protection)"
+    ],
+    "sub_processor_policy": "All sub-processors listed in DPA Annex B, 30-day notice for changes",
+    "cross_border_transfers": "Backups in Singapore, covered by ASEAN Model Contractual Clauses",
+    "dpia_conducted": "Yes, completed March 2024, no high-risk findings",
+    "consent_mechanism": "Not applicable — B2B document storage, no personal data processed",
+    "data_subject_rights": "Data export and deletion available via admin dashboard, 72-hour turnaround",
+    "privacy_policy": "Detailed vendor-specific privacy notice available at /privacy-enterprise"
+  },
+  "financial_indicators": {
+    "founded_year": 2018,
+    "funding": "profitably bootstrapped",
+    "estimated_arr": "$1.8M",
+    "revenue_growth": "~25% YoY (sustainable growth)",
+    "runway_estimate": "Self-sustaining, positive cash flow",
+    "profitability": "Profitable since 2023",
+    "operational_status": "active",
+    "key_personnel": [
+      "CEO: Budi Santoso (ex-Gojek engineering lead)",
+      "CTO: Andi Pratama (ex-Tokopedia security)",
+      "CFO: Dewi Lestari (CPA, 15 years enterprise finance)"
+    ],
+    "client_references": [
+      "PT Bank Mandiri (document archive)",
+      "PT Astra International (SOP management)",
+      "12 mid-size companies in manufacturing and logistics"
+    ],
+    "negative_notes": [],
+    "credit_check": "Dun & Bradstreet rating: 4A1 (low risk)",
+    "insurance": "Cyber liability insurance: $5M coverage (certificate provided)",
+    "professional_indemnity": "$2M coverage",
+    "legal_disputes": "None"
+  },
+  "compliance_certifications": [
+    "SOC 2 Type II (Security, Availability, Confidentiality)",
+    "ISO 27001:2022",
+    "ISO 27701:2019 (Privacy Information Management)"
+  ],
+  "sla_terms": {
+    "uptime_guarantee": "99.95%",
+    "support_response": "1 hour for critical, 4 hours for high, 24 hours for standard",
+    "data_portability": "Full export via admin API, no notice required",
+    "termination_clause": "30-day notice, data deletion within 30 days with certificate of destruction"
+  },
+  "expected_status": "APPROVED"
+}

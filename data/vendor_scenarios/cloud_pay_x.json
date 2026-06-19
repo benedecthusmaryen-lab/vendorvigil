@@ -1,0 +1,95 @@
+{
+  "vendor_id": "V-002",
+  "vendor_name": "CloudPayX",
+  "legal_name": "CloudPayX Technologies Pte. Ltd.",
+  "service_type": "Payment processing and customer transaction storage",
+  "headquarters": "Singapore",
+  "regions_served": ["Southeast Asia", "Australia", "India"],
+  "employees": 120,
+  "founded_year": 2021,
+  "website": "https://cloudpayx.example.com",
+  "primary_contact": "David Chen, VP of Partnerships",
+  "contract_type": "SaaS subscription + per-transaction fee",
+  "contract_value_estimate": "$85,000/year",
+  "processes_personal_data": true,
+  "processes_payments": true,
+  "data_types": [
+    "customer full name",
+    "email address",
+    "phone number",
+    "bank account number (encrypted at rest)",
+    "credit/debit card PAN (tokenized via third-party)",
+    "transaction history (amount, date, merchant)",
+    "billing address",
+    "IP address and device fingerprint"
+  ],
+  "data_volume_estimate": "~2.5 million records, ~150 GB",
+  "security_evidence": {
+    "soc2": false,
+    "iso27001": true,
+    "iso27001_certification_date": "2023-06-15",
+    "iso27001_scope": "Payment processing infrastructure",
+    "encryption": "mentioned but incomplete",
+    "encryption_at_rest": "AES-256 for database, not confirmed for backups",
+    "encryption_in_transit": "TLS 1.3 for API, TLS 1.2 for internal services",
+    "key_management": "AWS KMS, rotation policy not documented",
+    "penetration_testing": "Last pen test: Q1 2024, results not shared with clients",
+    "vulnerability_scanning": "Monthly automated scans, quarterly manual review",
+    "incident_history": "not available",
+    "incident_response_plan": "Claims to have one, not shared",
+    "access_controls": "RBAC implemented, MFA for admin accounts only",
+    "logging_monitoring": "CloudWatch + Splunk, 90-day retention",
+    "employee_background_checks": "For engineering and ops teams only"
+  },
+  "privacy_evidence": {
+    "dpa": false,
+    "data_location": "unclear",
+    "claimed_data_regions": ["AWS ap-southeast-1 (Singapore)", "unclear for backups"],
+    "data_retention": "not available",
+    "claimed_retention": "Active data: 7 years, archived: indefinite",
+    "sub_processors": [
+      "AWS (hosting)",
+      "Stripe (card tokenization)",
+      "Twilio (SMS verification)",
+      "undisclosed analytics provider"
+    ],
+    "cross_border_transfers": "Acknowledged but no SCCs or BCRs provided",
+    "dpia_conducted": "Not confirmed",
+    "consent_mechanism": "Vendor relies on customer's own consent collection",
+    "data_subject_rights": "Claims compliance with GDPR Articles 15-22, process not documented",
+    "privacy_policy": "Generic privacy policy, no vendor-specific data handling details",
+    "cookie_tracking": "Uses third-party cookies in merchant dashboard"
+  },
+  "financial_indicators": {
+    "founded_year": 2021,
+    "funding": "Series A",
+    "funding_amount": "$12M (Jan 2023)",
+    "funding_investors": "Southeast Asia Ventures, FinTech Capital",
+    "estimated_arr": "$4.2M",
+    "revenue_growth": "~60% YoY (self-reported, not audited)",
+    "runway_estimate": "~18 months at current burn rate",
+    "profitability": "Pre-profit, growth-focused",
+    "operational_status": "active",
+    "key_personnel": [
+      "CEO: Marcus Lim (ex-Stripe)",
+      "CTO: Priya Sharma (ex-Grab)",
+      "CFO: Not appointed (CEO handles finance)"
+    ],
+    "client_references": ["3 mid-size e-commerce companies", "1 regional bank (pilot)"],
+    "negative_notes": [],
+    "credit_check": "No Dun & Bradstreet report available",
+    "insurance": "Claims cyber liability insurance, certificate not provided",
+    "legal_disputes": "None disclosed"
+  },
+  "compliance_certifications": [
+    "PCI-DSS Level 1 (via Stripe tokenization, not direct)",
+    "ISO 27001:2022"
+  ],
+  "sla_terms": {
+    "uptime_guarantee": "99.9%",
+    "support_response": "4 hours for critical, 24 hours for standard",
+    "data_portability": "Export via API, 30-day notice required",
+    "termination_clause": "90-day notice, data deletion within 60 days"
+  },
+  "expected_status": "ESCALATED"
+}

@@ -1,0 +1,117 @@
+{
+  "vendor_id": "V-003",
+  "vendor_name": "QuickLeadPro",
+  "legal_name": "QuickLeadPro Inc.",
+  "service_type": "Marketing enrichment and customer profiling",
+  "headquarters": "Unknown (claims Delaware incorporation)",
+  "regions_served": ["Global (unclear data residency)"],
+  "employees": "~15 (estimated from LinkedIn)",
+  "founded_year": 2024,
+  "website": "https://quickleadpro.example.com (basic landing page only)",
+  "primary_contact": "Jake Morrison, Founder (also sole developer per LinkedIn)",
+  "contract_type": "Monthly subscription, auto-renewal",
+  "contract_value_estimate": "$12,000/year",
+  "processes_personal_data": true,
+  "processes_payments": false,
+  "data_types": [
+    "customer name",
+    "email address",
+    "phone number",
+    "social media profile URLs",
+    "behavioral profile (browsing patterns, engagement scores)",
+    "income estimates (sourced from third-party data brokers)",
+    "demographic inferences (age range, gender prediction, household size)",
+    "credit score ranges (sourced from third-party)",
+    "geolocation data (city-level, derived from IP)"
+  ],
+  "data_volume_estimate": "Unknown, claims to process 'millions of profiles'",
+  "data_sources": [
+    "Customer-provided data via API",
+    "Third-party data brokers (names not disclosed)",
+    "Public records scraping (legality unclear)",
+    "Social media data aggregation (ToS compliance unclear)"
+  ],
+  "security_evidence": {
+    "soc2": false,
+    "iso27001": false,
+    "encryption": "not available",
+    "encryption_at_rest": "Not documented",
+    "encryption_in_transit": "HTTPS on website, API encryption not documented",
+    "key_management": "Not documented",
+    "penetration_testing": "No evidence of any pen testing",
+    "vulnerability_scanning": "Not documented",
+    "incident_history": "not available",
+    "incident_response_plan": "None documented",
+    "access_controls": "Not documented, unclear if any access control exists",
+    "logging_monitoring": "Not documented",
+    "employee_background_checks": "Not documented, team size estimated at ~15",
+    "security_team": "No dedicated security personnel identified"
+  },
+  "privacy_evidence": {
+    "dpa": false,
+    "data_location": "unclear",
+    "claimed_data_regions": ["'Cloud-based' — specific regions not specified"],
+    "data_retention": "not available",
+    "claimed_retention": "'As long as necessary for service delivery' — no specific period",
+    "sub_processors": [
+      "Unknown cloud provider",
+      "Multiple undisclosed third-party data brokers",
+      "Undisclosed AI/ML processing provider"
+    ],
+    "sub_processor_policy": "No sub-processor list, no notification policy",
+    "cross_border_transfers": "Likely transfers to US (data brokers), no SCCs or legal basis documented",
+    "dpia_conducted": "No",
+    "consent_mechanism": "No consent collection — data aggregated from third parties without subject knowledge",
+    "data_subject_rights": "No documented process for access, deletion, or rectification requests",
+    "privacy_policy": "Generic website privacy policy, does not cover data enrichment activities",
+    "data_broker_disclosure": "Names of data brokers not disclosed despite request",
+    "profiling_disclosure": "Automated decision-making acknowledged, but logic and consequences not explained",
+    "opt_out_mechanism": "None documented"
+  },
+  "financial_indicators": {
+    "founded_year": 2024,
+    "funding": "unclear",
+    "funding_amount": "No public funding announcements",
+    "funding_investors": "Unknown, possibly self-funded",
+    "estimated_arr": "Unknown (<$500K estimated)",
+    "revenue_growth": "Unknown",
+    "runway_estimate": "Unknown",
+    "profitability": "Unknown",
+    "operational_status": "active",
+    "key_personnel": [
+      "Founder: Jake Morrison (sole listed employee on LinkedIn, prior experience unclear)",
+      "No CTO, CFO, or CISO identified"
+    ],
+    "client_references": [
+      "2 testimonials on website (unverifiable)",
+      "No enterprise client logos or case studies"
+    ],
+    "negative_notes": [
+      "low documentation completeness",
+      "high third-party data dependency",
+      "data broker sources not disclosed",
+      "no dedicated security or privacy team",
+      "company age < 1 year",
+      "no verifiable enterprise client references",
+      "data sourcing practices raise legal concerns (scraping, broker aggregation)",
+      "founder appears to be sole operator with no organizational depth"
+    ],
+    "credit_check": "No Dun & Bradstreet profile found",
+    "insurance": "No evidence of cyber liability or professional indemnity insurance",
+    "legal_disputes": "Unknown, no public records found but also no corporate filings verified"
+  },
+  "compliance_certifications": [],
+  "regulatory_concerns": [
+    "Potential violation of GDPR Article 14 (indirect data collection without notification)",
+    "Potential violation of CCPA (data broker obligations)",
+    "FCRA compliance unclear for credit score data usage",
+    "Social media scraping may violate platform Terms of Service"
+  ],
+  "sla_terms": {
+    "uptime_guarantee": "None documented",
+    "support_response": "Email only, 'within 48 hours' per website FAQ",
+    "data_portability": "Not documented",
+    "termination_clause": "Cancel anytime via dashboard, no mention of data deletion"
+  },
+  "expected_status": "TEMPORARILY_REJECTED"
+}
