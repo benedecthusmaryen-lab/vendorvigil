@@ -197,4 +197,7 @@ This system is **not** an official auditor, **not** a compliance certification, 
 ## Team
 
 **OlengSquad** — Band of Agents Hackathon 2026  
+- Benyamin Benedecthus Nicolaus Maryen (benedecthusmaryen-lab)
+- Gilbert 
+- Aril Gerald Deniel Makalare (aril-05)
 Track 1: Internal Enterprise — Governance & High-Stakes Decision Support
